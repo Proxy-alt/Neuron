@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /bare-ultraviolet/
+Disallow: /bare-scramjet/
+Disallow: /bare-rammerhead/
+Disallow: /proxy/
+Allow: /
+Sitemap: /sitemap.xml
