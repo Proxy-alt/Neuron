@@ -94,8 +94,8 @@ export default function SettingsPage() {
 
           <Tabs defaultValue="appearance">
             <TabsList className="mb-4">
-              <TabsTrigger value="appearance">Appearance</TabsTrigger>
-              <TabsTrigger value="preferences">Preferences</TabsTrigger>
+              <TabsTrigger value="appearance" className="data-[state=active]:bg-[var(--accent)/20] data-[state=active]:text-[var(--accent)] data-[state=active]:font-bold data-[state=active]:shadow-md">Appearance</TabsTrigger>
+              <TabsTrigger value="preferences" className="data-[state=active]:bg-[var(--accent)/20] data-[state=active]:text-[var(--accent)] data-[state=active]:font-bold data-[state=active]:shadow-md">Preferences</TabsTrigger>
             </TabsList>
 
             <TabsContent value="appearance">

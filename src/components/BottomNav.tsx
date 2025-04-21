@@ -28,16 +28,19 @@ export function BottomNav() {
               key={link.href}
               href={link.href}
               className={cn(
-                "bottom-nav-button relative flex flex-col items-center justify-center p-1 rounded-md transition-colors",
+                "bottom-nav-button relative flex flex-col items-center justify-center p-2 rounded-xl transition-colors",
                 isActive
-                  ? "text-[var(--accent)]"
+                  ? "bg-[var(--accent)/20] text-[var(--accent)] shadow-[0_2px_8px_-2px_var(--accent)]"
                   : "text-white/70 hover:text-white"
               )}
+              aria-current={isActive ? "page" : undefined}
             >
-              <Icon size={24} />
-              <span className="text-xs mt-1">{link.label}</span>
+              <Icon size={28} />
+              <span className="text-xs mt-1 font-semibold tracking-wide">
+                {link.label}
+              </span>
               {isActive && (
-                <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-[var(--accent)] rounded-full" />
+                <span className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-[var(--accent)] rounded-full animate-pulse" />
               )}
             </Link>
           );
