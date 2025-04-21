@@ -1,4 +1,4 @@
-// ... existing code ...
+import { ArrowLeft, ArrowRight, RotateCw } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export function Header() {
@@ -30,4 +30,3 @@ export function Header() {
     </div>
   );
 }
-// ... existing code ...
